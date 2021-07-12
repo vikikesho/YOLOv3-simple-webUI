@@ -1,0 +1,64 @@
+:root {
+	--primary-color: #00bcd4;
+	--accent-color: #f50057;
+
+	--text-color: #263238;
+	--body-color: #80deea;
+	--main-font: 'roboto';
+	--font-bold: 700;
+	--font-regular: 400;
+}
+* { box-sizing: border-box }
+
+body {
+	color: var(--text-color);
+	background-color: var(--body-color);
+	font-family: var(--main-font), Arial;
+	font-weight: var(--font-regular);
+}
+
+.mainPage {
+    display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100vw;
+	height: 100vh;
+}
+
+h1 {
+    font-weight: var(--font-bold)
+}
+/* Chrome, Opera, Safari */
+.InputBox-input::-webkit-input-placeholder {
+  color: white;
+}
+/* Firefox 19+ */
+.InputBox-input::-moz-placeholder {
+  color: white;
+}
+/* IE 10+, Edge */
+.InputBox-input:-ms-input-placeholder {
+  color: white;
+}
+/* Firefox 18- */
+#formGroupExampleInput:-moz-placeholder {
+  color: white;
+}
+
+
+
+.InputBox {
+	--height: 4em;
+	display: flex;
+	
+	border-radius: var(--height);
+	background-color: var(--primary-color);
+	height: var(--height);
+}
+
+.results {
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 5%;
+}

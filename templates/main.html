@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="../static/styles.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    </head>
+    <body>
+        <div class="mainPage">
+            <h1>Objects Detector</h1>
+            <form enctype="multipart/form-data" method="POST" action="/">
+                <label for="img">Upload image:</label><br>
+                <div class="InputBox">
+		            <input type="file" id="img" name="img" accept=".jpeg, .jpg" class="InputBox-input">
+                    <input type="submit" class="InputBox-button">
+                </div>
+            </form>
+            {% if result %}
+                {{ result }}
+            {% endif %}
+        </div>
+    </body>
+</html>

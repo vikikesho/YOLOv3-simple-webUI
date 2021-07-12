@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="../static/styles.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    </head>
+    <body>
+        <a href="{{ url_for('main_page') }}">Return to main page</a>
+        <div class="results">
+            {% if result %}
+                <img src="{{ result }}">
+            {% endif %}
+        </div>
+    </body>
+</html>
